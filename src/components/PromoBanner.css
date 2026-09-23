@@ -1,0 +1,121 @@
+.promo-banner {
+  width: 86%;
+  min-height: 280px;
+  margin: 20px auto 60px;
+  padding: 45px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  overflow: hidden;
+  border-radius: 14px;
+  background-color: #ff6b00;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-banner:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(255, 107, 0, 0.2);
+}
+
+.promo-content {
+  max-width: 650px;
+}
+
+.promo-label {
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.promo-content h2 {
+  margin-bottom: 12px;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.promo-description {
+  max-width: 560px;
+  margin-bottom: 25px;
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.92;
+}
+
+.promo-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #ff6b00;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.promo-button:hover {
+  transform: translateY(-2px);
+}
+
+.promo-highlight {
+  width: 190px;
+  height: 190px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+}
+
+.promo-highlight span {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.promo-highlight strong {
+  font-size: 52px;
+  line-height: 1;
+}
+
+@media (max-width: 800px) {
+  .promo-banner {
+    width: 90%;
+    padding: 40px 30px;
+  }
+
+  .promo-content h2 {
+    font-size: 32px;
+  }
+
+  .promo-highlight {
+    width: 150px;
+    height: 150px;
+  }
+
+  .promo-highlight strong {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 600px) {
+  .promo-banner {
+    width: 90%;
+    margin-bottom: 45px;
+    padding: 35px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .promo-content h2 {
+    font-size: 28px;
+  }
+
+  .promo-highlight {
+    align-self: center;
+  }
+}

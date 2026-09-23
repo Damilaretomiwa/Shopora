@@ -1,0 +1,157 @@
+.featured-section {
+  width: 100%;
+  padding: 60px 7%;
+  background-color: #ffffff;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.featured-card {
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  background-color: #ffffff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.featured-image {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  background-color: #f5f5f5;
+}
+
+.featured-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.featured-card:hover .featured-image img {
+  transform: scale(1.06);
+}
+
+.featured-wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #333333;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-wishlist:hover {
+  color: #ff6b00;
+}
+
+.featured-info {
+  padding: 18px;
+}
+
+.product-category {
+  color: #888888;
+  font-size: 12px;
+}
+
+.featured-info h3 {
+  margin: 7px 0;
+  color: #171717;
+  font-size: 17px;
+}
+
+.featured-rating {
+  margin-bottom: 15px;
+  color: #555555;
+  font-size: 13px;
+}
+
+.featured-rating span {
+  color: #ff6b00;
+}
+
+.featured-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.featured-bottom strong {
+  color: #171717;
+  font-size: 17px;
+}
+
+.featured-bottom button {
+  padding: 9px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6b00;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.featured-bottom button:hover {
+  background-color: #e85f00;
+}
+
+@media (max-width: 1000px) {
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .featured-section {
+    padding: 45px 5%;
+  }
+
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .featured-image {
+    height: 190px;
+  }
+
+  .featured-info {
+    padding: 13px;
+  }
+
+  .featured-info h3 {
+    font-size: 14px;
+  }
+
+  .featured-bottom {
+    display: block;
+  }
+
+  .featured-bottom strong {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .featured-bottom button {
+    width: 100%;
+  }
+}
